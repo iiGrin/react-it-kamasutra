@@ -9,9 +9,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div>
-        <Technologies />
-      </div>
+      <Technologies />
     </div>
   );
 }
