@@ -3,11 +3,11 @@ import './Post.module.css';
 import classes from './Post.module.css'; // import css module .module.css
 
 // create Post component
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item}>
             <img src='https://i.pinimg.com/originals/ef/ba/81/efba81733530bdfb1e508e7a8627f63e.jpg' />
-            Post1
+            {props.message}
             <div>
             <span>Like</span>
             </div>
