@@ -12,14 +12,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // inserted components
 const App = (props) => {
   return (
-    <BrowserRouter>
+    // navigation(route)
+    <BrowserRouter> 
       <div className='app-wrapper'>
-        <Header />
-        <Navbar />
+        <Header/>
+        <Navbar/>
         <div class='app-wrapper-content'>
           <Routes>
-            <Route path='/dialogs' component={<Dialogs />} />
-            <Route path='/profile' component={<Profile />} />
+            <Route path='/dialogs' element={<Dialogs/>} /> 
+            <Route path='/profile' element={<Profile/>} />
           </Routes>
         </div>
       </div>
