@@ -13,14 +13,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = (props) => {
   return (
     // navigation(route)
-    <BrowserRouter> 
+    <BrowserRouter>
       <div className='app-wrapper'>
-        <Header/>
-        <Navbar/>
+        <Header />
+        <Navbar />
         <div class='app-wrapper-content'>
           <Routes>
-            <Route path='/dialogs' element={<Dialogs/>}/> 
-            <Route path='/profile' element={<Profile/>}/>
+            <Route /*exact*/ path='/dialogs' element={<Dialogs />} />
+            <Route path='/profile' element={<Profile />} />
           </Routes>
         </div>
       </div>
