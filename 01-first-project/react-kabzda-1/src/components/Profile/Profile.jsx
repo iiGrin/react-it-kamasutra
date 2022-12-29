@@ -2,17 +2,15 @@ import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import './Profile.module.css';
 import classes from './Profile.module.css'; // import css module .module.css
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
-    return <div>
+    return (
         <div>
-            <img src='https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'/>
+            <ProfileInfo />
+            <MyPosts />
         </div>
-        <div>
-            ava + disc
-        </div>
-        <MyPosts/>
-    </div>
+    )
 }
 
 export default Profile

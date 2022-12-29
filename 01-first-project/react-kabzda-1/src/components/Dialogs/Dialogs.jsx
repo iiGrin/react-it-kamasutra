@@ -29,6 +29,10 @@ const Dialogs = (props) => {
                 <Message message='Hi !'/>
                 <Message message='How is your IT-KAMASUTRA ?'/>
                 <Message message='Yo !!!'/>
+                <Message message='Yo !!!'/>
+                <Message message='Yo !!!'/>
+                <Message message='Yo !!!'/>
+                <Message message='Yo !!!'/>
             </div>
         </div>
     )
