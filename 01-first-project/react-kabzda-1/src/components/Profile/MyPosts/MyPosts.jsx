@@ -5,10 +5,12 @@ import Post from './Post/Post';
 
 const MyPosts = () => {
 
-    let postsData = [
+    let posts = [
         { id: 1, message: 'Hi. How are you?', likesCount: 12 },
         { id: 2, message: 'Its my first post', likesCount: 11 },
     ]
+    // auto adding post from posts array 
+    let postsElements = posts.map(post => <Post message={post.message} likesCount={post.likesCount} />)
 
     return (
         <div className={classes.postsBlock}>
@@ -22,8 +24,7 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={classes.posts}>
-                <Post message={postsData[0].message} likesCount={postsData[0].likesCount} />
-                <Post message={postsData[1].message} likesCount={postsData[1].likesCount} />
+                {postsElements}
             </div>
         </div>
     )
