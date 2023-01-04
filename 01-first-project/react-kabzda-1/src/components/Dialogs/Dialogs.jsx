@@ -12,10 +12,10 @@ const Dialogs = (props) => {
     // ]
 
     // auto adding dialog items from dialogData to dialogElements
-    let dialogsElements = props.dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)
+    let dialogsElements = props.state.dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)
 
     // auto adding  message item from messageData to messagesElements
-    let messagesElements = props.messages.map(message => <Message message={message.message} />)
+    let messagesElements = props.state.messages.map(message => <Message message={message.message} />)
 
     return (
         <div className={classes.dialogs}>
