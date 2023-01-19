@@ -2,7 +2,7 @@ import React from 'react';
 import './MyPosts.module.css';
 import classes from './MyPosts.module.css'; // import css module .module.css
 import Post from './Post/Post';
-import { addPostActionCreator, updateNewPostTextActionCreator } from '../../../Redux/State';
+import { addPostActionCreator, updateNewPostTextActionCreator } from '../../../Redux/ProfileReducer';
 
 const MyPosts = (props) => {
     // auto adding post from posts array 
