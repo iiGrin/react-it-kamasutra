@@ -1,4 +1,4 @@
-import dialogsReducer from "./DialogsReduser"
+import dialogsReducer from "./DialogsReducer"
 import profileReducer from "./ProfileReducer"
 import sidebarReducer from "./SidebarReducer"
 
