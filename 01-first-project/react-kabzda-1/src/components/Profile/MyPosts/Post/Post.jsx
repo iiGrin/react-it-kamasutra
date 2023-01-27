@@ -6,7 +6,7 @@ import classes from './Post.module.css'; // import css module .module.css
 const Post = (props) => {
     return (
         <div className={classes.item}>
-            <img src='https://i.pinimg.com/originals/ef/ba/81/efba81733530bdfb1e508e7a8627f63e.jpg' />
+            <img src='https://i.pinimg.com/originals/ef/ba/81/efba81733530bdfb1e508e7a8627f63e.jpg' alt='' />
             {props.message}
             <div>
                 <span>Like</span> {props.likesCount}
