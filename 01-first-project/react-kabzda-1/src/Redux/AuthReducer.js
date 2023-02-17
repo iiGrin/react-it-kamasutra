@@ -1,4 +1,4 @@
-const SET_USER_DATA = 'SET-USER-DATA'
+const SET_USER_DATA = 'SET_USER_DATA'
 
 
 let initialState = {
@@ -17,6 +17,8 @@ const authReducer = (state = initialState, action) => {
                 ...action.data, 
                 isAuth: true
             }
+            default:
+                return state
     }
 }
 
