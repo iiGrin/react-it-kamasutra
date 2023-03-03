@@ -1,11 +1,11 @@
 import React from 'react';
-import Preloader from '../../common/Preloader/Preloader';
 import './ProfileInfo.module.css';
 import classes from './ProfileInfo.module.css'; // import css module .module.css
+import { Navigate } from 'react-router-dom';
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
-        return <Preloader />
+        return <Navigate to='/login' />
     }
 
     return (
